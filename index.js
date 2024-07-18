@@ -1,4 +1,2 @@
-alert("hello");
-prompt("there");
-confirm("world");
-console.log("done");
+var myName = "Angela";
+alert(myName);
