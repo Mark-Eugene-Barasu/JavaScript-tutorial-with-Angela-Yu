@@ -1,6 +1,7 @@
+// dog age to human age convertor 
 
-let yourInput = prompt(`Enter your name`);
-let firstCharacter = yourInput.slice(0,1).toUpperCase();
+// human age = (dog age - 2) x 4 + 21
 
-yourInput = firstCharacter + yourInput.slice(1, yourInput.length).toLowerCase();
-alert(`Hello ${yourInput}`);
+let dogAge = prompt(`How old is your dog?`);
+let humanAge = ((dogAge -2) * 4) + 21;
+alert(`if your dog were to be a human \nIt would have been ${humanAge} years`)
