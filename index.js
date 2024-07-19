@@ -1,3 +1,6 @@
-// Angela's solution
-let yourInput = prompt(`Enter your text here.`);
-alert(`You have written ${yourInput.length} characters, you have ${200 - yourInput.length} characters left.`)
+
+let yourInput = prompt(`Enter your name`);
+let firstCharacter = yourInput.slice(0,1).toUpperCase();
+
+yourInput = firstCharacter + yourInput.slice(1, yourInput.length).toLowerCase();
+alert(`Hello ${yourInput}`);
