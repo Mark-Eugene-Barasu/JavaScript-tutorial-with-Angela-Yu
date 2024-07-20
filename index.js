@@ -1,7 +1,12 @@
-// dog age to human age convertor 
+// life in weeks challenge
 
-// human age = (dog age - 2) x 4 + 21
+let age  = document.getElementById("inputAge").value;
 
-let dogAge = prompt(`How old is your dog?`);
-let humanAge = ((dogAge -2) * 4) + 21;
-alert(`if your dog were to be a human \nIt would have been ${humanAge} years`)
+function lifeInWeeks(age) {
+    let lifeInWeeksLeft = 90 - Number(age);
+    let days = lifeInWeeksLeft * 365;
+    let weeks = lifeInWeeksLeft * 52;
+    let months = lifeInWeeksLeft * 12;
+
+    document.querySelector(".outputResult").innerHTML = `You are left with ${days} days, ${weeks} weeks and ${months} months left.`
+}
