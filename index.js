@@ -1,4 +1,3 @@
-
 // Life in weeks challenge
 function lifeInWeeks() {
     let age = document.getElementById("inputAge").value;
