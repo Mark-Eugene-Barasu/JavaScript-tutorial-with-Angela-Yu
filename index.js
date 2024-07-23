@@ -1,10 +1,8 @@
-// Life in weeks challenge
-function lifeInWeeks() {
-    let age = document.getElementById("inputAge").value;
-    let lifeInWeeksLeft = 90 - Number(age);
-    let days = lifeInWeeksLeft * 365;
-    let weeks = lifeInWeeksLeft * 52;
-    let months = lifeInWeeksLeft * 12;
-    document.querySelector(".outputResult").innerHTML = `You are left with ${days} days, ${weeks} weeks, and ${months} months left.`;
+
+function myFunc(number) {
+    return Math.pow(number, 2);
 }
-    
+
+let powered = myFunc(4);
+
+console.log(powered); // 16 
