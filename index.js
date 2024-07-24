@@ -1,6 +1,7 @@
-function getMilk(money) {
-    return money % 1.5;
+// BMI calculator
+
+function bmiCalculator(weight, height) {
+    return Math.round( weight / Math.pow(height, 2));
 }
 
-let change = getMilk(4);
-console.log(change);
+console.log(bmiCalculator(65, 1.8));
