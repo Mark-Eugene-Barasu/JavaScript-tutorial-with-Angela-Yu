@@ -1,8 +1,6 @@
-
-function myFunc(number) {
-    return Math.pow(number, 2);
+function getMilk(money) {
+    return money % 1.5;
 }
 
-let powered = myFunc(4);
-
-console.log(powered); // 16 
+let change = getMilk(4);
+console.log(change);
