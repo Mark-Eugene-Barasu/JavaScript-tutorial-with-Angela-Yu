@@ -1,6 +1,9 @@
 
-let people = [`Angela`, `Ben`, `Jerry`, `Micheal`, `Chloe`];
+let bottle_s = `bottles`;
 
-let randomPick  = Math.floor(Math.random() * people.length)
-
-console.log(`${people[randomPick]}, is paying for dinner today.`);
+for (let i = 100; i >= 1 ; i--) {
+    if (i < 2) {
+        bottle_s = `bottle`;
+    }
+    console.log(`${i} ${bottle_s} of beer on the wall, ${i} ${bottle_s} of beer, take 1 down, pass it around, ${i - 1} ${bottle_s} of beer on the wall `);
+}
