@@ -1,7 +1,9 @@
-// BMI calculator
+// love calculator
 
-function bmiCalculator(weight, height) {
-    return Math.round( weight / Math.pow(height, 2));
-}
+let firstUser = prompt(`What is your name?:`);
+let secondUser = prompt(`Who is your crush?:`);
 
-console.log(bmiCalculator(65, 1.8));
+// random numbers between 1 - 100
+let randomPerCentage = Math.round(Math.random() * 100) + 1
+
+alert(`The love percentage between ${firstUser} ❤️ ${secondUser} \n${randomPerCentage}%`);
