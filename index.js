@@ -1,17 +1,11 @@
-// Leap Year Calculator
+// arrays in javaScript
 
-function learYear(year) {
-    if ((year % 4) === 0) {
-        if ((year % 100) === 0) {
-            if ((year % 400) === 0) {
-                return `Leap year`;
-            } else {
-                return `Not Leap Year`;
-            }
-        } else {
-            return  `Leap Year`;
-        }
-    } else {
-        return `Not Leap Year`;
-    }
+let guestList = [`Angela`, `Jack`, `Pam`, `James`, `Lara`, `Jason`];
+
+let name = prompt(`Enter your name:`);
+
+if (guestList.includes(name)){
+    alert(`Your welcome.`);
+} else {
+    alert(`Sorry, your not allowed.`);
 }
