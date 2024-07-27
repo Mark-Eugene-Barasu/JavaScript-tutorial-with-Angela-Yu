@@ -1,11 +1,21 @@
-// arrays in javaScript
+// FizzBuzz quiz 
 
-let guestList = [`Angela`, `Jack`, `Pam`, `James`, `Lara`, `Jason`];
+let numbers = [];
 
-let name = prompt(`Enter your name:`);
-
-if (guestList.includes(name)){
-    alert(`Your welcome.`);
-} else {
-    alert(`Sorry, your not allowed.`);
+for(let i = 1; i <= 100; i++){
+    if (i % 3 === 0 && i % 5 === 0) {
+        let i = `FizzBuzz`;
+        numbers.push(i);
+    } else if (i % 3 === 0) {
+        let i =  `Fizz`;
+        numbers.push(i);
+    } else if (i % 5 === 0) {
+        let i = `Buzz`;
+        numbers.push(i);
+    } else {
+        // i = i;
+        numbers.push(i);
+    }
 }
+
+console.log(numbers);
