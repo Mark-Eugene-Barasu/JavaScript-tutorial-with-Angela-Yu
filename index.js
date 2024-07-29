@@ -1,9 +1,22 @@
 
-let bottle_s = `bottles`;
+// fibonacci sequence challenge
 
-for (let i = 100; i >= 1 ; i--) {
-    if (i < 2) {
-        bottle_s = `bottle`;
+function fibonacci(n) {
+    let output = [];
+
+    if (n === 1) {
+        output = [0];
+    } else if (n === 2 ) {
+        output = [0, 1];
+    } else {
+        output = [0, 1];
+        for (let i = 2; i < n; i++) {
+            output.push(output[output.length - 2] + output[output.length - 1]);
+        }
     }
-    console.log(`${i} ${bottle_s} of beer on the wall, ${i} ${bottle_s} of beer, take 1 down, pass it around, ${i - 1} ${bottle_s} of beer on the wall `);
+    
+    return output;
 }
+
+let output = fibonacci(5);
+console.log(output);
